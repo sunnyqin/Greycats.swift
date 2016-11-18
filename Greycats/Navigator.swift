@@ -3,7 +3,7 @@ import UIKit
 public protocol Navigatable {
     func canGoBack() -> Bool
     func goBack()
-    func navigatableChanged(_ listener: () -> Void)
+    func navigatableChanged(_ listener: @escaping () -> Void)
 }
 
 extension UIViewController {
