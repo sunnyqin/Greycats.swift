@@ -11,7 +11,7 @@ extension UIViewController {
         goBack()
     }
     
-    public func canGoBack() -> Bool {
+    open func canGoBack() -> Bool {
         guard let navigationController = navigationController else {
             return false
         }
@@ -21,7 +21,7 @@ extension UIViewController {
         return false
     }
     
-    public func goBack() {
+    open func goBack() {
         guard let navigationController = navigationController else {
             return
         }
